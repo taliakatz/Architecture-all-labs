@@ -1,12 +1,12 @@
 all: exec
 
-c-lib: menu_map.c
-	gcc -g -m32 -c -o menu_map.o menu_map.c
+c-lib: menuMap.c
+	gcc -g -m32 -c -o menuMap.o menuMap.c
 
 exec: c-lib
-	gcc -g -m32  menu_map.o -o menu_map
-	rm menu_map.o
+	gcc -g -m32  menuMap.o -o menuMap
+	rm menuMap.o
 
 .PHONY: clean
 clean:
-	rm -rf ./*.o menu_map
+	rm -rf ./*.o menuMap
